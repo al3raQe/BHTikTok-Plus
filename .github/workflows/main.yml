@@ -74,7 +74,7 @@ jobs:
           wget "$deb_url" --no-verbose -O "${{ github.workspace }}/bhtiktok.deb"
 
           # Set tag variable used later in filenames (keep consistent name)
-          echo "BHTiktok_TAG=Plus_2.3.1   By_al3raQe" >> $GITHUB_ENV
+          echo "BHTiktok_TAG=Plus_2.3.1_By_al3raQe" >> $GITHUB_ENV
 
       - name: Inject tweaks into IPA
         run: |
