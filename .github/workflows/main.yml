@@ -1,0 +1,101 @@
+name: Build BH_Plus 4 TikTok App
+
+on:
+  workflow_dispatch:
+    inputs:
+
+      ipa_url:
+        description: "لإضافة مميزات رائعة للتطبيق: مثل تحميل الفيديوهات بدقة عالية وبدون علامة مائية, منع الإعلانات, إخفاء البث المباشر وغيرها URL to the decrypted IPA file"
+        default: ""
+        required: true
+        type: string
+
+      display_name:
+        description: "App Name (Optional)"
+        default: "TikTok"
+        required: true
+        type: string
+
+      bundle_id:
+        description: "BundleID (Optional)"
+        default: "com.zhiliaoapp.musically"
+        required: true
+        type: string
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build BHTikTok
+    runs-on: macos-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Main
+        uses: actions/checkout@v4.1.1
+        with:
+          path: main
+          submodules: recursive
+
+      - name: Hide sensitive inputs
+        uses: levibostian/action-hide-sensitive-inputs@v1
+        with:
+          exclude_inputs: display_name,bundle_id
+
+      - name: Download and validate IPA
+        run: |
+          wget "${{ inputs.ipa_url }}" --no-verbose -O ${{ github.workspace }}/TikTok.ipa
+
+          file_type=$(file --mime-type -b ${{ github.workspace }}/TikTok.ipa)
+
+          if [[ "$file_type" != "application/x-ios-app" && "$file_type" != "application/zip" ]]; then
+            echo "::error::Validation failed: The downloaded file is not a valid IPA. Detected type: $file_type."
+            exit 1
+          fi
+
+      - name: Install Dependencies
+        run: brew install make ldid
+
+      - name: Set PATH environment variable
+        run: echo "$(brew --prefix make)/libexec/gnubin" >> $GITHUB_PATH
+
+      - name: Install cyan
+        run: pipx install --force https://github.com/asdfzxcvbn/pyzule-rw/archive/main.zip
+
+      - name: Download BH_Plus for TikTok (direct)
+        id: download_BH_Plus
+        run: |
+          # Direct .deb release asset URL (hardcoded). Update version if you release a new one.
+          deb_url="https://github.com/al3raQe/BHTikTok-Plus/releases/download/BHTiktok/com.bandarhl.bhtiktok_2.3.1_iphoneos-arm64.deb"
+          echo "Downloading: $deb_url"
+          wget "$deb_url" --no-verbose -O "${{ github.workspace }}/bhtiktok.deb"
+
+          # Set tag variable used later in filenames (keep consistent name)
+          echo "BHTiktok_TAG=2.3.1_By_al3raQe" >> $GITHUB_ENV
+
+      - name: Inject tweaks into IPA
+        run: |
+          cyan -i TikTok.ipa -o BHTikTok_${{ env.BHTiktok_TAG }}.ipa -uwef bhtiktok.deb -n "${{ inputs.display_name }}" -b ${{ inputs.bundle_id }} -s
+
+      - name: Strip embedded Swift dylibs
+        run: |
+          unzip -q BHTikTok_${{ env.BHTiktok_TAG }}.ipa -d tmp_payload
+          find tmp_payload/Payload/*.app/ -name "libswift*.dylib" -print -delete
+          cd tmp_payload
+          zip -qr ../BHTikTok_${{ env.BHTiktok_TAG }}_clean.ipa Payload
+          cd ..
+          mv BHTikTok_${{ env.BHTiktok_TAG }}_clean.ipa BHTikTok_${{ env.BHTiktok_TAG }}.ipa
+
+      - uses: softprops/action-gh-release@v2.0.1
+        with:
+          tag_name: BHTikTok-${{ env.BHTiktok_TAG }}
+          name: BHTikTok ${{ env.BHTiktok_TAG }}
+          files: BHTikTok_${{ env.BHTiktok_TAG }}.ipa
+          draft: true
+
+      - name: Output Release URL
+        run: |
+          echo "::notice::Release available at: https://github.com/${{ github.repository }}/releases"
