@@ -1,0 +1,277 @@
+/* Headers */
+"Settings" = "Inställningar";
+"Developer" = "BHTikTok-utvecklare";
+"PlusDeveloper" = "BHTikTok Plus-utvecklare";
+
+/* Main */
+"DownloadOptions" = "Nedladdningar";
+"FeedOptions" = "Flöde";
+"ProfileOptions" = "Profil";
+"ConfirmationOptions" = "Bekräftelse";
+"RegionOptions" = "Region";
+"FakeOptions" = "Fejk";
+"ColorOptions" = "Utseende";
+"OtherOptions" = "Övrigt";
+"Apply" = "Tillämpa";
+
+/* Developer */
+"TipJar" = "Dricksburk";
+"DonateViaPayPal" = "Donera via PayPal";
+"Donate" = "Stöd utvecklingen";
+"Telegram" = "Vår Telegram-kanal";
+"Thanks" = "Särskilt tack";
+"DonateMessage" = "Om du gillar BHTikTok Plus och vill stödja mig kan du köpa mig en kaffe via något av de bekväma sätten nedan.\n\nTack❤";
+"MaybeLater" = "Kanske Senare";
+"ThankYou" = "Tack";
+
+/* Download Options */
+"DownloadFeedHeader" = "Flöde";
+"DownloadVideos" = "Ladda ner videor";
+"DownloadVideosDesc" = "Lägger till en knapp för att ladda ner videor utan vattenmärken";
+"DownloadHDVideos" = "Ladda ner HD-videor";
+"DownloadHDVideosDesc" = "Lägger till alternativ för att ladda ner HD (H.265) videor. Obs: Detta format kanske inte är kompatibelt med vissa appar";
+"DownloadWMVideos" = "Ladda ner videor med vattenmärken";
+"DownloadWMVideosDesc" = "Lägger till alternativ för att ladda ner videor med vattenmärken";
+"DownloadMusics" = "Ladda ner musik";
+"DownloadMusicsDesc" = "Lägger till en knapp för att ladda ner musik från videor";
+"CopyVideoDescription" = "Kopiera videobeskrivning";
+"CopyVideoDescriptionDesc" = "Lägger till en knapp för att kopiera videobeskrivningar";
+"CopyVideosLink" = "Kopiera videolänk";
+"CopyVideosLinkDesc" = "Lägger till en knapp för att kopiera videolänkar";
+"CopyMusicsLink" = "Kopiera musiklänk";
+"CopyMusicsLinkDesc" = "Lägger till en knapp för att kopiera musiklänkar";
+"GroupMenuItems" = "Gruppera menyalternativ";
+"GroupMenuItemsDesc" = "Grupperar menyalternativ i undermenyerna Nedladdning och Kopiera Information";
+"CompactProgress" = "Kompakt förloppsindikator";
+"CompactProgressDesc" = "Visar en kompakt nedladdningsindikator längst ner på skärmen";
+"RemoveWatermark" = "Inaktivera vattenmärken";
+"RemoveWatermarkDesc" = "Användbart om du vill ladda ner videor utan vattenmärken från standardmenyn i TikTok";
+"DownloadProfileHeader" = "Profil";
+"SaveProfileImage" = "Spara profilbilder";
+"SaveProfileImageDesc" = "Tillåter nedladdning av profilbilder via långtryck";
+"CopyProfileInformation" = "Kopiera profilinformation";
+"CopyProfileInformationDesc" = "Tillåter kopiering av profilbeskrivningar via långtryck på ett foto eller @användarnamn";
+"DownloadedAction" = "Åtgärd efter nedladdning";
+"SaveToPhotos" = "Spara till Foton";
+"ShowShareSheet" = "Visa delningspanel";
+"DownloadMenu" = "Nedladdningsmeny-stil";
+"CompactMenu" = "Kompakt";
+"OldMenu" = "TikTok";
+
+/* Feed Options */
+"Feed" = "Flöde";
+"NoAds" = "Ingen reklam";
+"NoAdsDesc" = "Inaktiverar all reklam på startsidan";
+"HideUI" = "Dölj UI-knappar";
+"HideUIDesc" = "Döljer gränssnittsknapparna för gilla/kommentera/dela/ladda ner";
+"UploadRegion" = "Visa uppladdningsland";
+"UploadRegionDesc" = "Visar videons uppladdningslandsflagga bredvid användarnamnet";
+"NoPullToRefresh" = "Inaktivera 'dra för att uppdatera'";
+"NoPullToRefreshDesc" = "Inaktiverar gesten för att uppdatera flödet genom att dra nedåt på den första sidan";
+"ShowUsername" = "Visa användarnamn";
+"ShowUsernameDesc" = "Visar användarnamn istället för smeknamn, som i äldre versioner";
+"TransparentComms" = "Halvtransparenta kommentarer";
+"TransparentCommsDesc" = "Gör bakgrunden i kommentarsfönstret halvtransparent";
+"ClearLinks" = "Rensa affiliatelänkar";
+"ClearLinksDesc" = "Rensar affiliatelänkar från en videobeskrivning";
+"NoWarnings" = "Inaktivera varningar";
+"NoWarningsDesc" = "Inaktiverar alla varningar";
+"SkipRecs" = "Hoppa över rekommendationer";
+"SkipLive" = "Hoppa över livesändningar";
+"ShowProgressBar" = "Visa förloppsindikator";
+"PlaybackAction" = "Uppspelningsåtgärd";
+"Replay" = "Spela upp igen";
+"Stop" = "Stoppa";
+"SkipToNext" = "Hoppa till nästa";
+"RegionStyle" = "Regionens visningsstil";
+"CountryFlag" = "Landsflagga";
+"CountryCode" = "Landskod";
+"InNickname" = "I smeknamnet";
+"TopRight" = "Övre högra";
+"StartupPage" = "Startskärm";
+"ForYou" = "För dig";
+"Following" = "Följer";
+
+/* Profile Options */
+"FollowStatus" = "Följarstatus";
+"FollowStatusDesc" = "Visar följarstatus (Följer dig/Vänner) ovanför smeknamnet";
+"VideoCount" = "Antal videor";
+"VideoCountDesc" = "Visar antal videor på profilen";
+"TotalVideoCount" = "Totalt antal videor"; // %@ is total video count (Posts: 25)
+"UploadDate" = "Uppladdningsdatum";
+"UploadDateDesc" = "Visar datumet då videon laddades upp";
+"ProfileLikeCount" = "Antal gilla-markeringar på profilen";
+"ProfileLikeCountDesc" = "Visar det totala antalet gilla-markeringar på profilen";
+"UnsensitiveContent" = "Inget känslighetsfilter";
+"UnsensitiveContentDesc" = "Inaktiverar filtret för känsligt innehåll";
+"NoJustWatched" = "Inaktivera 'Nyss tittat'";
+"NoJustWatchedDesc" = "Inaktiverar 'Nyss tittat'-popupen när du scrollar uppåt i flödet";
+"ExtendBio" = "Utöka bio";
+"ExtendBioDesc" = "Tillåter att hela bion visas till 222";
+"ExtendComment" = "Utöka kommentar";
+"ExtendCommentDesc" = "Tillåter att hela kommentaren visas till 240";
+"UploadHD" = "Ladda upp HD-videor";
+"UploadHDDesc" = "Tillåter uppladdning av HD (H.265) videor";
+
+/* Confirmation Options */
+"ConfirmLike" = "Bekräfta Gilla";
+"ConfirmLikeDesc" = "Kräver bekräftelse innan du gillar en video";
+"ConfirmCommentLike" = "Bekräfta Gilla på Kommentar";
+"ConfirmCommentLikeDesc" = "Kräver bekräftelse innan du gillar en kommentar";
+"ConfirmCommentDislike" = "Bekräfta Ogilla på Kommentar";
+"ConfirmCommentDislikeDesc" = "Kräver bekräftelse innan du ogillar en kommentar";
+"ConfirmFollow" = "Bekräfta Följning";
+"ConfirmFollowDesc" = "Kräver bekräftelse innan du följer en användare";
+
+/* Region Options */
+"EnableChangingRegion" = "Ändra region";
+"Regions" = "Regioner";
+"SaudiArabia" = "Saudiarabien";
+"Taiwan" = "Taiwan";
+"HongKong" = "Hongkong";
+"Macao" = "Macao";
+"Japan" = "Japan";
+"SouthKorea" = "Sydkorea";
+"UnitedKingdom" = "Storbritannien";
+"UnitedStates" = "USA";
+"Australia" = "Australien";
+"Canada" = "Kanada";
+"Argentina" = "Argentina";
+"Philippines" = "Filippinerna";
+"Laos" = "Laos";
+"Malaysia" = "Malaysia";
+"Thailand" = "Thailand";
+"Singapore" = "Singapore";
+"Indonesia" = "Indonesien";
+"Vietnam" = "Vietnam";
+"Anguilla" = "Anguilla";
+"Panama" = "Panama";
+"Germany" = "Tyskland";
+"Russia" = "Ryssland";
+"Belarus" = "Vitryssland";
+"Ukraine" = "Ukraina";
+"Kazakhstan" = "Kazakstan";
+"France" = "Frankrike";
+"Finland" = "Finland";
+"Italy" = "Italien";
+"Pakistan" = "Pakistan";
+"Denmark" = "Danmark";
+"Norway" = "Norge";
+"Sudan" = "Sudan";
+"Romania" = "Rumänien";
+"UnitedArabEmirates" = "Förenade Arabemiraten";
+"Egypt" = "Egypten";
+"Lebanon" = "Libanon";
+"Mexico" = "Mexiko";
+"Brazil" = "Brasilien";
+"Turkey" = "Turkiet";
+"Kuwait" = "Kuwait";
+"Algeria" = "Algeriet";
+"Senegal" = "Senegal";
+"Switzerland" = "Schweiz";
+"Albania" = "Albanien";
+"Moldova" = "Moldavien";
+"Croatia" = "Kroatien";
+"Morocco" = "Marocko";
+"Yemen" = "Jemen";
+"Turkmenistan" = "Turkmenistan";
+"Uzbekistan" = "Uzbekistan";
+"Azerbaijan" = "Azerbajdzjan";
+"Netherlands" = "Nederländerna";
+"Poland" = "Polen";
+"CzechRepublic" = "Tjeckien";
+
+/* Fake Options */
+"FakeBlueMark" = "Falskt Verifieringsmärke";
+"EnableFakeOptions" = "Falska Prenumerationer/Gilla-markeringar";
+"FollowerCount" = "Antal Följare";
+"FollowingCount" = "Antal Följer";
+"LikeCount" = "Antal Gilla-markeringar";
+"EnterNumber" = "Ange ett Tal";
+"FakeDesc" = "Lämna fälten tomma för att visa originalvärden. Dessa ändringar är endast synliga för dig";
+
+/* Color Options */
+"NicknameColor" = "Ändra Smeknamnsfärg";
+"NicknameColorDesc" = "Ändrar färgen på smeknamn i flödet";
+"NicknameColorGlobal" = "Applicera på Alla Smeknamn";
+"NicknameColorGlobalDesc" = "Ändrar färgen på smeknamn i hela appen. Kräver att alternativet \"%@\" är aktiverat"; // %@ är Ändra Smeknamnsfärg (NicknameColor)
+"CommentColor" =  "Ändra Beskrivningsfärg";
+"CommentColorDesc" =  "Ändrar färgerna på videobeskrivningar";
+"SelectColor" = "Välj Färg";
+"ProfileTextShadow" = "Applicera Skugga på Miniatyrbilder";
+"ProfileTextShadowDesc" = "Applicerar skugga på statistik på videominiatyrbilder i profiler";
+"NicknameTextShadow" = "Applicera Skugga på Smeknamn";
+"NicknameTextShadowDesc" = "Applicerar skugga på smeknamn i flödet";
+"NicknameGlobalShadow" = "Applicera på Alla Smeknamn";
+"NicknameGlobalShadowDesc" = "Applicerar skugga på smeknamn i hela appen. Kräver att alternativet \"%@\" är aktiverat"; // %@ är Applicera Skugga på Smeknamn (är Smeknamnstextskugga)
+
+/* Other */
+"BHButtonPlacement" = "Placering av inställningsknappen";
+"InProfile" = "I Profil";
+"InSettings" = "I Inställningar";
+"Padlock" = "Lösenkodslås";
+"PadlockDesc" = "Kräver en lösenkod för att låsa upp appen";
+"Cache" = "Rensa Cache";
+"Cleared" = "Klart.\nRensat %@";
+"FixInteractions" = "Åtgärda Interaktioner";
+"FixInteractionsDesc" = "Tar bort all data, inklusive misstänkt aktivitet, och återställer därmed möjligheten att prenumerera, gilla och kommentera media";
+"FixInteractionsMsg" = "DENNA ÅTGÄRD KAN INTE ÅNGRAS.\n\nAll data, inklusive: Auktoriseringsdata, Appinställningar, Tweaks-inställningar och Alla befintliga utkast kommer att raderas.\n\nÄr du säker på att du vill fortsätta?";
+"RestartApp" = "Klart.\nAppen behöver startas om";
+
+/* Special Thanks */
+"Arabic" = "Arabic localization";
+"ChineseSimplified" = "Simplified Chinese localization";
+"ChineseTraditional" = "Traditional Chinese localization";
+"Spanish" = "Spanish localization";
+"French" = "French localization";
+"Vietnamese" = "Vietnamese localization";
+"Turkish" = "Turkish localization";
+"Japanese" = "Japanese localization";
+"Swidesh" = "Swidesh localization";
+
+/* Pop-ups And Other Stuff */
+"BHTikTokSettings" = "BHTikTok Plus";
+"AreYouSure" = "Är du säker?";
+"ActionFollow" = "Följ";
+"ActionLike" = "Gilla";
+"ActionDislike" = "Gilla inte";
+"ConfirmAction" = "Bekräfta åtgärd";
+"Warning" = "Varning";
+"ApplyDesc" = "Denna åtgärd kommer att stänga appen för att tillämpa ändringarna.\n\nÄr du säker?";
+"Yes" = "Ja";
+"No" = "Nej";
+"Confirm" = "Bekräfta";
+"Cancel" = "Avbryt";
+"DownloadGroup" = "Ladda ner";
+"CopyGroup" = "Kopiera";
+"Downloading" = "Laddar ner";
+"DownloadVideo" = "Ladda ner video";
+"DownloadHDVideo" = "Ladda ner HD-video";
+"DownloadWMVideo" = "Ladda ner vattenmärkt";
+"DownloadMusic" = "Ladda ner musik";
+"DownloadThisPhoto" = "Ladda ner detta foto";
+"DownloadAllPhotos" = "Ladda ner alla foton";
+"DownloadProfileImage" = "Ladda ner profilbild";
+"StaticImagesOnly" = "Endast statiska bilder";
+"CopyMusicLink" = "Kopiera musiklänk";
+"CopyVideoLink" = "Kopiera videolänk";
+"CopyDescription" = "Kopiera beskrivning";
+"WhatToCopy" = "Välj en åtgärd";
+"CopySocialName" = "Kopiera @användarnamn";
+"CopyNickName" = "Kopiera namn";
+"CopyBio" = "Kopiera bio";
+"CopyBioURL" = "Kopiera profil-URL";
+"VidNoMusic" = "Videon har ingen musik";
+"VidNoDescription" = "Mediet har ingen beskrivning";
+"Success" = "Sparat";
+"Copied" = "Kopierat";
+"Done" = "Klar";
+"Share" = "Dela";
+"NoFollows" = "Följer inte";
+"FollowsYou" = "Följer dig";
+"DoesntFollowsYou" = "Följer";
+"Friends" = "Vänner";
+
+/* Passlock */
+"Authenticate" = "Autentisera för att få åtkomst";
+"IdentifyYourself" = "Få åtkomst";
