@@ -2,6 +2,10 @@
 An awesome tweak for TikTok!
 
 <p align="center">
+<img src="./imginfo/info.png"?raw=true)</p>
+</p>
+
+<p align="center">
 <img src=https://raw.githubusercontent.com/al3raQe/BHTikTok-Plus/refs/heads/Master/info.png?raw=true) />
 </p>
 
