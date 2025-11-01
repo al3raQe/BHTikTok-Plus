@@ -1,12 +1,9 @@
 # BHTikTok Plus
 An awesome tweak for TikTok!
 
-<p align="center">
-<img src="./imginfo/info.png"?raw=true)</p>
-</p>
 
 <p align="center">
-<img src=https://raw.githubusercontent.com/al3raQe/BHTikTok-Plus/refs/heads/Master/info.png?raw=true) />
+<img src=https://github.com/al3raQe/BHTikTok/blob/Master/imginfo/info.png?raw=true?raw=true) />
 </p>
 
 # BHTikTok
