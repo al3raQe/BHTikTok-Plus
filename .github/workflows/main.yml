@@ -73,9 +73,6 @@ jobs:
           echo "Downloading: $deb_url"
           wget "$deb_url" --no-verbose -O "${{ github.workspace }}/bhtiktok.deb"
 
-          # Set tag variable used later in filenames (keep consistent name)
-          echo "BHTiktok_TAG=Plus_2.3.1_By_al3raQe" >> $GITHUB_ENV
-
       - name: Inject tweaks into IPA
         run: |
           cyan -i TikTok.ipa -o BHTikTok_${{ env.BHTiktok_TAG }}.ipa -uwef bhtiktok.deb -n "${{ inputs.display_name }}" -b ${{ inputs.bundle_id }} -s
