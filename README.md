@@ -32,6 +32,3 @@ An awesome tweak for TikTok!
 - Fake Follower count
 - Fake Following count
 - Padlock
-
-# TODO
--  [ ] Add Localization for the tweak.
