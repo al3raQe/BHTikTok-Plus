@@ -12,13 +12,13 @@ on:
 
       display_name:
         description: "App Name (Optional)"
-        default: "TikTok"
+        default: "iraQTok"
         required: true
         type: string
 
       bundle_id:
         description: "BundleID (Optional)"
-        default: "com.zhiliaoapp.musically"
+        default: "com.zhiliaoapps.musically"
         required: true
         type: string
 
